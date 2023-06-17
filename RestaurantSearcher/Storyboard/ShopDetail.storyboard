@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shop Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ShopDetailViewController" id="Y6W-OH-hqX" customClass="ShopDetailViewController" customModule="RestaurantSearcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00D-N1-ndR">
+                                <rect key="frame" x="126.66666666666669" y="71" width="140" height="140"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PJK-fj-ogu">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="70"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaS-hg-fFi">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="imgButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ZFS-j7-Jv3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="1kY-WW-sGX"/>
+                                    <constraint firstItem="PJK-fj-ogu" firstAttribute="top" secondItem="00D-N1-ndR" secondAttribute="top" id="6ZF-Qa-hzT"/>
+                                    <constraint firstItem="YaS-hg-fFi" firstAttribute="top" secondItem="00D-N1-ndR" secondAttribute="top" id="8l3-vR-nN6"/>
+                                    <constraint firstAttribute="bottom" secondItem="PJK-fj-ogu" secondAttribute="bottom" id="BFS-i4-F6o"/>
+                                    <constraint firstAttribute="trailing" secondItem="PJK-fj-ogu" secondAttribute="trailing" id="Dff-6I-9bk"/>
+                                    <constraint firstAttribute="width" constant="140" id="Smf-kF-YJn"/>
+                                    <constraint firstItem="YaS-hg-fFi" firstAttribute="leading" secondItem="00D-N1-ndR" secondAttribute="leading" id="Wji-JP-A8o"/>
+                                    <constraint firstAttribute="trailing" secondItem="YaS-hg-fFi" secondAttribute="trailing" id="YuN-xQ-DEK"/>
+                                    <constraint firstItem="PJK-fj-ogu" firstAttribute="leading" secondItem="00D-N1-ndR" secondAttribute="leading" id="gU3-WF-C4w"/>
+                                    <constraint firstAttribute="bottom" secondItem="YaS-hg-fFi" secondAttribute="bottom" id="r8e-Tk-6sa"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLm-h8-Pn2">
+                                <rect key="frame" x="22" y="81" width="50" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9OZ-Vi-kye"/>
+                                    <constraint firstAttribute="width" constant="50" id="CSO-3i-uaj"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mdC-3K-xTA">
+                                <rect key="frame" x="0.0" y="223" width="393" height="595"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8h-Ra-g6a">
+                                <rect key="frame" x="321" y="81" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AJB-v3-5WY"/>
+                                    <constraint firstAttribute="width" constant="50" id="Bo2-Z7-nHX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic-phone"/>
+                                <connections>
+                                    <action selector="phoneAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fnC-aj-eTE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="mdC-3K-xTA" secondAttribute="bottom" id="DC6-sS-Ga0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mdC-3K-xTA" secondAttribute="trailing" id="M8J-S8-T6J"/>
+                            <constraint firstItem="mdC-3K-xTA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="M8a-Um-mV1"/>
+                            <constraint firstItem="00D-N1-ndR" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Zgh-Oj-rcH"/>
+                            <constraint firstItem="b8h-Ra-g6a" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="22" id="dc9-jy-J6T"/>
+                            <constraint firstItem="mdC-3K-xTA" firstAttribute="top" secondItem="00D-N1-ndR" secondAttribute="bottom" constant="12" id="eEP-FW-gUB"/>
+                            <constraint firstItem="QLm-h8-Pn2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="22" id="gxB-xU-gUh"/>
+                            <constraint firstItem="QLm-h8-Pn2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="22" id="khj-I6-jLR"/>
+                            <constraint firstItem="00D-N1-ndR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="12" id="qJU-FW-zgW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="b8h-Ra-g6a" secondAttribute="trailing" constant="22" id="yAj-7s-XEF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="QLm-h8-Pn2" id="Gh2-IM-mOA"/>
+                        <outlet property="imgButton" destination="YaS-hg-fFi" id="7Fa-1D-qcg"/>
+                        <outlet property="shopDetailTableView" destination="mdC-3K-xTA" id="JwD-aT-op4"/>
+                        <outlet property="shopImageView" destination="PJK-fj-ogu" id="wO1-uH-gOk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="ic-phone" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
