@@ -79,7 +79,14 @@ class SearchShopViewController: UIViewController,UISearchBarDelegate,GenreViewCo
     override func loadView() {
         super.loadView()
         //call before viewdidload()
-        fetchShopDefaultDataInfo()
+        if let retrievedShopData = retrieveShopData() {
+            // Use the retrievedShopData object
+            print(retrievedShopData)
+            self.shopData = retrievedShopData
+            fetchGenreDataInfo()
+        } else {
+            print("Failed to retrieve ShopData")
+        }
     }
     
     override func viewDidLoad() {

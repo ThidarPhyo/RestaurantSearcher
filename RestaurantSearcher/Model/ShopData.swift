@@ -7,18 +7,23 @@
 
 import Foundation
 
-class ShopData: Decodable {
-    
+class ShopData: Codable {
     let results: Result
+    
+    init(results: Result) {
+        self.results = results
+    }
 }
 
-class Result: Decodable {
-    
+class Result: Codable {
     let shop: [Shop]
+    
+    init(shop: [Shop]) {
+        self.shop = shop
+    }
 }
 
-class Shop: Decodable {
-    
+class Shop: Codable {
     let access: String
     let address: String
     let `catch`: String
@@ -30,27 +35,45 @@ class Shop: Decodable {
     let photo: Photo
     let budget: Budget
     let card: String
-    
 }
 
-class Photo: Decodable {
-    
+class Photo: Codable {
     let mobile: Mobile
     let pc: PC
 }
 
-class Mobile: Decodable {
-    
+class Mobile: Codable {
     let l: String
     let s: String
 }
 
-class PC: Decodable {
-    
+class PC: Codable {
     let l: String
     let s: String
-    
 }
-struct Budget: Decodable {
+
+struct Budget: Codable {
     let average, code, name: String
+}
+
+// Save ShopData to UserDefaults
+func saveShopData(shopData: [Shop]) {
+    let results = Result(shop: shopData)
+    let shopData = ShopData(results: results)
+    
+    let encoder = JSONEncoder()
+    if let encodedData = try? encoder.encode(shopData) {
+        UserDefaults.standard.set(encodedData, forKey: "ShopDataKey")
+    }
+}
+
+// Retrieve ShopData from UserDefaults
+func retrieveShopData() -> [Shop]? {
+    if let encodedData = UserDefaults.standard.data(forKey: "ShopDataKey") {
+        let decoder = JSONDecoder()
+        if let shopData = try? decoder.decode(ShopData.self, from: encodedData) {
+            return shopData.results.shop
+        }
+    }
+    return nil
 }

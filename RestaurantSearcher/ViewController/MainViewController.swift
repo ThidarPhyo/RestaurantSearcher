@@ -190,10 +190,11 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     private func fetchShopDataInfo() {
         
         let params = [
+            
+            "keyword": searchText,
             "range" : "1",
             "lat": "\(latValue)",
-            "lng": "\(lngValue)",
-            
+            "lng": "\(lngValue)"
             
         ] as [String : Any]
         
@@ -202,6 +203,9 @@ class MainViewController: UIViewController, UITextFieldDelegate {
             self.shopData = shop.results.shop
             self.shopCount = shop.results.shop.count
             self.addAnnotation()
+            
+            // Save ShopData to UserDefaults
+            saveShopData(shopData: self.shopData)
         }
     }
     
@@ -384,6 +388,7 @@ extension MainViewController: CLLocationManagerDelegate, MKMapViewDelegate {
         self.latValue = latFloor
         self.lngValue = lngFloor
     
+        fetchShopDataInfo()
     }
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         guard let annotation = annotation as? CustomAnnotation else {

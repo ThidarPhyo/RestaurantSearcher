@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5215E9382A3F195600498CF3 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5215E9372A3F195600498CF3 /* Splash.storyboard */; };
+		5215E93B2A3F19E800498CF3 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215E93A2A3F19E800498CF3 /* LaunchViewController.swift */; };
+		5215E93D2A3F1A4500498CF3 /* logoAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5215E93C2A3F1A4500498CF3 /* logoAnimation.gif */; };
+		5215E9402A3F1AE800498CF3 /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = 5215E93F2A3F1AE800498CF3 /* SwiftyGif */; };
+		5215E9422A3F1B1600498CF3 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215E9412A3F1B1600498CF3 /* UIView+Constraints.swift */; };
+		5215E9442A3F1B2F00498CF3 /* LogoAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215E9432A3F1B2F00498CF3 /* LogoAnimationView.swift */; };
 		7F2AF72D2A2EF4EE00E8D2A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2AF72C2A2EF4EE00E8D2A1 /* AppDelegate.swift */; };
 		7F2AF72F2A2EF4EE00E8D2A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2AF72E2A2EF4EE00E8D2A1 /* SceneDelegate.swift */; };
 		7F2AF7312A2EF4EE00E8D2A1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2AF7302A2EF4EE00E8D2A1 /* MainViewController.swift */; };
@@ -33,7 +39,6 @@
 		7F42FA592A383A9D002B0B0A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42FA582A383A9D002B0B0A /* ProfileViewController.swift */; };
 		7F4BEBBE2A30546500955A20 /* PopupImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4BEBBD2A30546500955A20 /* PopupImage.storyboard */; };
 		7F4BEBC02A3061C300955A20 /* PopupImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4BEBBF2A3061C300955A20 /* PopupImageViewController.swift */; };
-		7F4BEBC42A30FDC400955A20 /* UIColor_Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4BEBC32A30FDC400955A20 /* UIColor_Restaurant.swift */; };
 		7F4BEBC72A31012200955A20 /* CommonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4BEBC62A31012200955A20 /* CommonExt.swift */; };
 		7F4BEBCB2A31644000955A20 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4BEBCA2A31644000955A20 /* UIAlertController.swift */; };
 		7F4BEC112A32F3DA00955A20 /* SearchShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4BEC102A32F3DA00955A20 /* SearchShopViewController.swift */; };
@@ -45,6 +50,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5215E9372A3F195600498CF3 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		5215E93A2A3F19E800498CF3 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		5215E93C2A3F1A4500498CF3 /* logoAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logoAnimation.gif; sourceTree = "<group>"; };
+		5215E9412A3F1B1600498CF3 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		5215E9432A3F1B2F00498CF3 /* LogoAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoAnimationView.swift; sourceTree = "<group>"; };
 		7F2AF7292A2EF4EE00E8D2A1 /* RestaurantSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2AF72C2A2EF4EE00E8D2A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F2AF72E2A2EF4EE00E8D2A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,7 +82,6 @@
 		7F42FA582A383A9D002B0B0A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7F4BEBBD2A30546500955A20 /* PopupImage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopupImage.storyboard; sourceTree = "<group>"; };
 		7F4BEBBF2A3061C300955A20 /* PopupImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupImageViewController.swift; sourceTree = "<group>"; };
-		7F4BEBC32A30FDC400955A20 /* UIColor_Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Restaurant.swift; sourceTree = "<group>"; };
 		7F4BEBC62A31012200955A20 /* CommonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonExt.swift; sourceTree = "<group>"; };
 		7F4BEBCA2A31644000955A20 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		7F4BEC102A32F3DA00955A20 /* SearchShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShopViewController.swift; sourceTree = "<group>"; };
@@ -89,12 +98,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F2AF7462A2EF6CE00E8D2A1 /* Alamofire in Frameworks */,
+				5215E9402A3F1AE800498CF3 /* SwiftyGif in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5215E9392A3F19C200498CF3 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				5215E93A2A3F19E800498CF3 /* LaunchViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		7F2AF7202A2EF4EE00E8D2A1 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +143,7 @@
 				7F42FA572A383A52002B0B0A /* SwiftUIViews */,
 				7F2AF7402A2EF52600E8D2A1 /* Storyboard */,
 				7F2AF7352A2EF4F100E8D2A1 /* Assets.xcassets */,
+				5215E93C2A3F1A4500498CF3 /* logoAnimation.gif */,
 				7F2AF7372A2EF4F100E8D2A1 /* LaunchScreen.storyboard */,
 				7F2AF73A2A2EF4F100E8D2A1 /* Info.plist */,
 			);
@@ -139,6 +158,7 @@
 				7F2AF7582A2FA29400E8D2A1 /* SearchShopResult.storyboard */,
 				7F4BEBBD2A30546500955A20 /* PopupImage.storyboard */,
 				7F42FA452A34FA2E002B0B0A /* Genre.storyboard */,
+				5215E9372A3F195600498CF3 /* Splash.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -146,6 +166,7 @@
 		7F2AF7412A2EF52E00E8D2A1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				5215E9392A3F19C200498CF3 /* Splash */,
 				7F2AF7302A2EF4EE00E8D2A1 /* MainViewController.swift */,
 				7F2AF7502A2F083F00E8D2A1 /* ShopDetailViewController.swift */,
 				7F2AF75A2A2FA2CB00E8D2A1 /* SearchShopResultViewController.swift */,
@@ -203,8 +224,9 @@
 		7F4BEBC22A30FD9A00955A20 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				7F4BEBC32A30FDC400955A20 /* UIColor_Restaurant.swift */,
 				7F4BEBCA2A31644000955A20 /* UIAlertController.swift */,
+				5215E9412A3F1B1600498CF3 /* UIView+Constraints.swift */,
+				5215E9432A3F1B2F00498CF3 /* LogoAnimationView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -235,6 +257,7 @@
 			name = RestaurantSearcher;
 			packageProductDependencies = (
 				7F2AF7452A2EF6CE00E8D2A1 /* Alamofire */,
+				5215E93F2A3F1AE800498CF3 /* SwiftyGif */,
 			);
 			productName = RestaurantSearcher;
 			productReference = 7F2AF7292A2EF4EE00E8D2A1 /* RestaurantSearcher.app */;
@@ -267,6 +290,7 @@
 			packageReferences = (
 				7F2AF7442A2EF6CE00E8D2A1 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				7F2AF7472A2EF84000E8D2A1 /* XCRemoteSwiftPackageReference "Nuke" */,
+				5215E93E2A3F1AE800498CF3 /* XCRemoteSwiftPackageReference "SwiftyGif" */,
 			);
 			productRefGroup = 7F2AF72A2A2EF4EE00E8D2A1 /* Products */;
 			projectDirPath = "";
@@ -291,6 +315,8 @@
 				7F2AF7362A2EF4F100E8D2A1 /* Assets.xcassets in Resources */,
 				7F42FA4C2A3509A1002B0B0A /* GenreTableViewCell.xib in Resources */,
 				7F2AF7342A2EF4EE00E8D2A1 /* Main.storyboard in Resources */,
+				5215E9382A3F195600498CF3 /* Splash.storyboard in Resources */,
+				5215E93D2A3F1A4500498CF3 /* logoAnimation.gif in Resources */,
 				7F2AF7592A2FA29400E8D2A1 /* SearchShopResult.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +330,9 @@
 			files = (
 				7F42FA442A347F22002B0B0A /* TabBarViewController.swift in Sources */,
 				7F2AF7312A2EF4EE00E8D2A1 /* MainViewController.swift in Sources */,
+				5215E9442A3F1B2F00498CF3 /* LogoAnimationView.swift in Sources */,
 				7F5F3F3E2A396053003108BB /* ProfileData.swift in Sources */,
+				5215E9422A3F1B1600498CF3 /* UIView+Constraints.swift in Sources */,
 				7F42FA592A383A9D002B0B0A /* ProfileViewController.swift in Sources */,
 				7F42FA562A383946002B0B0A /* ProfileView.swift in Sources */,
 				7F2AF74B2A2EF8E100E8D2A1 /* ShopData.swift in Sources */,
@@ -315,9 +343,9 @@
 				7F5F3F432A39869E003108BB /* ImageCoverCollectionViewCell.swift in Sources */,
 				7F2AF72D2A2EF4EE00E8D2A1 /* AppDelegate.swift in Sources */,
 				7F2AF72F2A2EF4EE00E8D2A1 /* SceneDelegate.swift in Sources */,
-				7F4BEBC42A30FDC400955A20 /* UIColor_Restaurant.swift in Sources */,
 				7F42FA482A34FA5B002B0B0A /* GenreViewController.swift in Sources */,
 				7F2AF75B2A2FA2CB00E8D2A1 /* SearchShopResultViewController.swift in Sources */,
+				5215E93B2A3F19E800498CF3 /* LaunchViewController.swift in Sources */,
 				7F2AF74D2A2EFC5B00E8D2A1 /* GenericAPIClient.swift in Sources */,
 				7F4BEC112A32F3DA00955A20 /* SearchShopViewController.swift in Sources */,
 				7F5F3F762A3ADCFA003108BB /* GenreData.swift in Sources */,
@@ -553,6 +581,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5215E93E2A3F1AE800498CF3 /* XCRemoteSwiftPackageReference "SwiftyGif" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kirualex/SwiftyGif.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		7F2AF7442A2EF6CE00E8D2A1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -572,6 +608,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5215E93F2A3F1AE800498CF3 /* SwiftyGif */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5215E93E2A3F1AE800498CF3 /* XCRemoteSwiftPackageReference "SwiftyGif" */;
+			productName = SwiftyGif;
+		};
 		7F2AF7452A2EF6CE00E8D2A1 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7F2AF7442A2EF6CE00E8D2A1 /* XCRemoteSwiftPackageReference "Alamofire" */;
