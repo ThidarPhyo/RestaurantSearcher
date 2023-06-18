@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5215E9382A3F195600498CF3 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5215E9372A3F195600498CF3 /* Splash.storyboard */; };
 		5215E93B2A3F19E800498CF3 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215E93A2A3F19E800498CF3 /* LaunchViewController.swift */; };
 		5215E93D2A3F1A4500498CF3 /* logoAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5215E93C2A3F1A4500498CF3 /* logoAnimation.gif */; };
 		5215E9402A3F1AE800498CF3 /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = 5215E93F2A3F1AE800498CF3 /* SwiftyGif */; };
 		5215E9422A3F1B1600498CF3 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215E9412A3F1B1600498CF3 /* UIView+Constraints.swift */; };
 		5215E9442A3F1B2F00498CF3 /* LogoAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215E9432A3F1B2F00498CF3 /* LogoAnimationView.swift */; };
+		5215E9492A3F24C900498CF3 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5215E9482A3F24C900498CF3 /* Splash.storyboard */; };
 		7F2AF72D2A2EF4EE00E8D2A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2AF72C2A2EF4EE00E8D2A1 /* AppDelegate.swift */; };
 		7F2AF72F2A2EF4EE00E8D2A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2AF72E2A2EF4EE00E8D2A1 /* SceneDelegate.swift */; };
 		7F2AF7312A2EF4EE00E8D2A1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2AF7302A2EF4EE00E8D2A1 /* MainViewController.swift */; };
@@ -50,11 +50,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5215E9372A3F195600498CF3 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		5215E93A2A3F19E800498CF3 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		5215E93C2A3F1A4500498CF3 /* logoAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logoAnimation.gif; sourceTree = "<group>"; };
 		5215E9412A3F1B1600498CF3 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		5215E9432A3F1B2F00498CF3 /* LogoAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoAnimationView.swift; sourceTree = "<group>"; };
+		5215E9482A3F24C900498CF3 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		7F2AF7292A2EF4EE00E8D2A1 /* RestaurantSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2AF72C2A2EF4EE00E8D2A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F2AF72E2A2EF4EE00E8D2A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 				7F2AF7582A2FA29400E8D2A1 /* SearchShopResult.storyboard */,
 				7F4BEBBD2A30546500955A20 /* PopupImage.storyboard */,
 				7F42FA452A34FA2E002B0B0A /* Genre.storyboard */,
-				5215E9372A3F195600498CF3 /* Splash.storyboard */,
+				5215E9482A3F24C900498CF3 /* Splash.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -315,9 +315,9 @@
 				7F2AF7362A2EF4F100E8D2A1 /* Assets.xcassets in Resources */,
 				7F42FA4C2A3509A1002B0B0A /* GenreTableViewCell.xib in Resources */,
 				7F2AF7342A2EF4EE00E8D2A1 /* Main.storyboard in Resources */,
-				5215E9382A3F195600498CF3 /* Splash.storyboard in Resources */,
 				5215E93D2A3F1A4500498CF3 /* logoAnimation.gif in Resources */,
 				7F2AF7592A2FA29400E8D2A1 /* SearchShopResult.storyboard in Resources */,
+				5215E9492A3F24C900498CF3 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
