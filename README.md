@@ -67,6 +67,17 @@ iOS 16.0
 - Alamofire
 - SwiftyGif
 
+### アドバイスして欲しいポイント
+- MapsのAnnotation表示の見た目、Rangeを選択するためDropdownかPickerか知りたいです。
+- Search tab bar のViewをScroll Viewでしたら良いか知りたいです。
+
+### 自己評価
+Map関連が未経験で思ったよりも実装に時間がかかりました。
+さらに使いやすさを考えると以下の２つの機能を追加したかったです。
+・現在地からお店までのルート検索
+・多言語対応
+今後も努力を重ねて、より満足度の高い結果を提供できるように取り組んでいきます。
+
 # Output
 <div style="display: flex; justify-content: center;">
   <div style="display: flex;">
