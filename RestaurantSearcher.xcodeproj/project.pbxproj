@@ -289,7 +289,6 @@
 			mainGroup = 7F2AF7202A2EF4EE00E8D2A1;
 			packageReferences = (
 				7F2AF7442A2EF6CE00E8D2A1 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				7F2AF7472A2EF84000E8D2A1 /* XCRemoteSwiftPackageReference "Nuke" */,
 				5215E93E2A3F1AE800498CF3 /* XCRemoteSwiftPackageReference "SwiftyGif" */,
 			);
 			productRefGroup = 7F2AF72A2A2EF4EE00E8D2A1 /* Products */;
@@ -595,14 +594,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.0.0;
-			};
-		};
-		7F2AF7472A2EF84000E8D2A1 /* XCRemoteSwiftPackageReference "Nuke" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kean/Nuke.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 12.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
